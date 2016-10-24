@@ -1,0 +1,21 @@
+[
+{
+	"Titulo":"Desvelados nuevos detalles de Injustice 2",
+	"Fecha":"09/10/2016",
+	"Nota":"No han habido muchas oportunidades concedidas por NetherRealm Studios sobre su próximo título basado en la licencia DC Cómics, Injustice 2. El juego de lucha que acaparó gran atención el pasado E3 se ha mantenido escondido la mayor parte del tiempo, salvo por algún gameplay que daba cuenta de algún nuevo héroe. Desde el estudio, Brian Goodman ha concedido una serie de pequeñas informaciones de gran relevancia, en una entrevista a Game Reactor.
+
+De hecho, los detalles desvelados harían referencia al modo individual, el modo historia, donde Goodman ha declarado que “definitivamente, van a haber oportunidades en el modo historia que permitirán desear volver a jugarlo una segunda vez”, haciendo alusión a que habrá diferentes lineas argumentales. Aunque habría que concretar si cada luchador tendrá diferentes historias que narrar, la opción puede suscitar algún tipo de toma de decisiones o llevar a cabo algún cambio según el resultado del combate."
+},
+{
+	"Titulo":"Nuevo gameplay de Injustice 2 procedente de la EGX",
+	"Fecha":"26/09/2016",
+	"Nota":"La EGX ha sido el escenario donde NetherRealm Studios ha regresado a la actualidad con su actual proyecto, Injustice 2. Las batallas entre superhéroes por parte de los responsables de otras licencias del género como Mortal Kombat, se ha mostrado todo lo contundente que se esperaba tras su presentación oficial el pasado mes de junio.
+	Un gameplay bastante extenso derivado de una retransmisión, vía livestream, en el que hemos podido comprobar la contundencia de los combates de Injustice 2. Los héroes de DC Comic, como Batman, Gorilla Grodd, Superman o Atrocitus, han sido protagonistas de una demostración vinculada a la consola de Sony en el evento preparado para la EGX que ha tenido lugar este fin de semana. "
+},
+{
+	"Titulo":"NetherRealm Studios habla del sistema de equipo en Injustice 2",
+	"Fecha":"27/09/2016",
+	"Nota":"Los creadores de Injustice 2 han hablado acerca de uno de los aspectos que más preocupes a los jugadores: el sistema de personalización. El nuevo título de NetherRealm Studios introducirá una nueva mecánica mediante la cual podremos ganar equipo para nuestros personajes tras cada victoria. Este equipamiento permitirá modificar las estadísticas de los personajes y conseguir que hagan más daño con según qué movimientos. Ahora, el estudio ha aclarado que están trabajando para que no sea un lastre, sino una nueva forma de jugar e incluso darle toques estratégicos al título.
+	Ha sido Brian Goodman, miembro del equipo desarrollador, quien le ha contado a Eurogamer el proceso por el que están pasando para implementar bien esta característica. Dice que son conscientes (en NetherRealm) de que están saboteando un poco las bases de un juego de lucha (que no es otra cosa que la habilidad) que esperan encontrar los más puristas, pero asegura que lo están haciendo todo para que aquellos que quieran un juego de lucha, lo encuentren."
+}
+]

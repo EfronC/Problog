@@ -125,6 +125,14 @@ section.content {
 	flex: 1;
 }*/
 
+article.nota {
+	border-top: 1px solid;
+}
+
+a.titulo-nota {
+	color: red;
+}
+
 footer {
 	position: relative;
     /* Altura total del footer en px con valor negativo */
