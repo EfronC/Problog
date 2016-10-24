@@ -1,25 +1,56 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>The Vault</title>
+	<title>The Web League</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="js/blog.js"></script>
 </head>
 <body>
 <header>
 	<div id="navbar">
-		<div id="logo"></div>
-		<div id="post"></div>
-		<div id="noticias"></div>
-		<div id="humor"></div>
+		<a href="#"><img src="media/injustice.png" width="50" height="50"></a>
+		<ul>
+			<li class="dropdown">
+				<a href="javascript:void(0)" id="dropdown-1" class="dropbtn" onclick="drop(this.id);">Posts</a>
+				<div class="dropdown-content" id="dconpost">
+					<a href="#">L1</a>
+					<a href="#">L2</a>
+					<a href="#">L3</a>
+				</div>
+			</li>
+			<li class="dropdown">
+				<a href="javascript:void(0)" id="dropdown-2" class="dropbtn" onclick="drop(this.id);">Noticias</a>
+				<div class="dropdown-content" id="dconnoticias">
+					<a href="#">L1</a>
+					<a href="#">L2</a>
+					<a href="#">L3</a>
+				</div>
+			</li>
+			<li class="dropdown">
+				<a href="javascript:void(0)" id="dropdown-3" class="dropbtn" onClick="drop(this.id)">Humor</a>
+				<div class="dropdown-content" id="dconhumor">
+					<a href="#">L1</a>
+					<a href="#">L2</a>
+					<a href="#">L3</a>
+				</div>
+
+			</li>
+		</ul>
 	</div>
 </header>
 
-	<div id="caroussel"></div>
-
-	<div id="contenedor">
-		<div id="noticias"></div>
-		<div id="publicidad"></div>
+	<div id="caroussel">
+		<iframe width="100%" height="315" src="https://www.youtube.com/embed/hMkTQSbE6Bc" frameborder="0" allowfullscreen></iframe>
 	</div>
 
-	<footer>(c) Efraín Cárdenas. All rigths reserved.</footer>
+	
+	<div id="contenedor">
+		<div id="sponsor">Hola</div>
+		<div id="publish">Adios</div>
+		<div id="noticias">Presente</div>
+	</div>
+
+	<footer>&copy Efraín Cárdenas. All rigths reserved.</footer>
 </body>
 </html>
