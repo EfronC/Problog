@@ -93,7 +93,7 @@ header #navbar li.dropdown {
 #sponsor, #publish {
 	width: 15%;
 	outline: black solid;
-	height: 600px;
+	min-height: 600px;
 	text-align: center;
 	color: white;
 }
@@ -131,6 +131,10 @@ article.nota {
 
 a.titulo-nota {
 	color: red;
+}
+
+#publish img {
+	overflow: hidden;
 }
 
 footer {
