@@ -1,7 +1,10 @@
 /*	Estilos de la pagina	*/
+
+/*	Navbar	*/
 body {
 	margin: 0;
 	padding: 0; 
+	background-image: url("../media/bg.png");
 }
 
 header {
@@ -50,6 +53,7 @@ header #navbar li a:hover {
 	background-color: #111;
 }
 
+
 header #navbar li.dropdown {
 	display: inline-block;
 }
@@ -77,8 +81,11 @@ header #navbar li.dropdown {
 
 .show {display: block;}
 
+/*	Contenido	*/
+
 #contenedor {
 	width: 1300px;
+	/*max-width:1600px;*/
 	margin: 0 auto;
 	padding: 10px;
 }
@@ -88,14 +95,16 @@ header #navbar li.dropdown {
 	outline: black solid;
 	height: 600px;
 	text-align: center;
+	color: white;
 }
 
 #noticias {
 	width: 60%;
 	margin: 0 260px;
-	outline: black solid;
-	height: 600px;
-	text-align: center;
+	outline: black;
+	min-height: 600px;
+	text-align: left;
+	color: white;
 }
 
 #sponsor {
@@ -106,36 +115,14 @@ header #navbar li.dropdown {
 	float: right;
 }
 
-/*#contenedor #sponsor {
-	position: relative;
-	width: 150px;
-	height: 400px;
-	outline: black solid;
-	float: left;
-	margin-right: 5px;
+/*.flex-container {
+	display: flex;
+	flex-direction:column;
+	min-height: 100vh;
 }
 
-#contenedor #noticias {
-	margin: 10px;
-	position: relative;
-	width: 600px;
-	height: 400px;
-	outline: black solid;
-}
-
-#contenedor #publish {
-	position: relative;
-	width: 150px;
-	height: 400px;
-	outline: black solid;
-	float: right;
-}
-
-/*#contenedor article {
-	float left;
-	height: 400px;
-	outline: black solid;
-	width: 30%;
+section.content {
+	flex: 1;
 }*/
 
 footer {
@@ -146,6 +133,6 @@ footer {
     padding:5px 0px;
     clear: both;
     /*background: #286af0;*/
-    text-align: center;
+    text-align: left;
     color: #000;
 }
