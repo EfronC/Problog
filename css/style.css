@@ -84,7 +84,7 @@ header #navbar li.dropdown {
 /*	Contenido	*/
 
 #contenedor {
-	width: 1300px;
+	max-width: 100%;
 	/*max-width:1600px;*/
 	margin: 0 auto;
 	padding: 10px;
@@ -100,7 +100,7 @@ header #navbar li.dropdown {
 
 #noticias {
 	width: 60%;
-	margin: 0 260px;
+	margin: 0 auto;
 	outline: black;
 	min-height: 600px;
 	text-align: left;
