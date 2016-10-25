@@ -88,6 +88,7 @@ header #navbar li.dropdown {
 	/*max-width:1600px;*/
 	margin: 0 auto;
 	padding: 10px;
+	max-height: auto;
 }
 
 #sponsor, #publish {
@@ -131,10 +132,6 @@ article.nota {
 
 a.titulo-nota {
 	color: red;
-}
-
-#publish img {
-	overflow: hidden;
 }
 
 footer {
