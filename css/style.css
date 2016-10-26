@@ -116,6 +116,34 @@ header #navbar li.dropdown {
 	float: right;
 }
 
+#sponsor input, label {
+	float: left;
+}
+
+#sponsor #lecturas {
+	margin-left: 10px;
+}
+
+#sponsor #heroes {
+	margin-left: 10px;
+}
+
+#sponsor #villanos {
+	margin-left: 10px;
+}
+
+#sponsor #sagas {
+	margin-left: 10px;
+}
+
+#sponsor form {
+	margin-bottom: 10px;
+}
+
+#sponsor button {
+	margin: 10px 60px;
+}
+
 /*.flex-container {
 	display: flex;
 	flex-direction:column;
