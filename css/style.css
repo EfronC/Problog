@@ -110,10 +110,12 @@ header #navbar li.dropdown {
 
 #sponsor {
 	float: left;
+	overflow-x: hidden;
 }
 
 #publish {
 	float: right;
+	overflow-x: hidden;
 }
 
 #sponsor input, label {
