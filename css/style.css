@@ -125,28 +125,13 @@ header #navbar li.dropdown {
 	overflow-x: hidden;
 }
 
+#publish a img {
+	margin: 10px 0;
+}
+
 #sponsor input, label {
 	float: left;
 }
-
-/*#sponsor #lecturas {
-	margin-left: 10px;
-}
-
-#sponsor #heroes {
-	margin-left: 10px;
-	border-top: 1px solid;
-}
-
-#sponsor #villanos {
-	margin-left: 10px;
-	border-top: 1px solid;
-}
-
-#sponsor #sagas {
-	margin-left: 10px;
-	border-top: 1px solid;
-}*/
 
 .encuesta {
 	margin-left: 10px;
