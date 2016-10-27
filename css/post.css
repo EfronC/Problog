@@ -1,0 +1,111 @@
+/*	Estilos de la pagina	*/
+
+/*	Navbar	*/
+body {
+	margin: 0;
+	padding: 0; 
+	background-image: url("../media/bg.png");
+}
+
+header {
+	margin: 0;
+	padding: 0;
+}
+
+header #navbar {
+	margin:0 auto;
+	padding: 0;
+}
+
+header #navbar img {
+	float: left;
+	background-color: #333;
+}
+
+header #navbar ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+	height: 50px;
+}
+
+header #navbar li {
+	float: left;
+}
+
+header #navbar li a, .dropbtn {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 16px 16px;
+	text-decoration: none;
+}
+
+header #navbar li img {
+	float: right;
+	margin: 0;
+	padding: 0;
+}
+
+header #navbar li a:hover {
+	background-color: #111;
+}
+
+
+header #navbar li.dropdown {
+	display: inline-block;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: black;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	overflow: hidden;
+}
+
+.dropdown-content a {
+	color: white;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+}
+
+.drodown-content a:hover {
+	background-color: #293d3d;
+}
+
+.show {display: block;}
+
+/*	Contenido	*/
+
+#banner {
+	margin-bottom: 10px;
+	max-height: 300px;
+}
+
+#contenido {
+	max-width: 100%;
+	/*max-width:1600px;*/
+	margin: 0 auto;
+	padding: 10px;
+	max-height: auto;
+}
+
+
+
+footer {
+	position: relative;
+    /* Altura total del footer en px con valor negativo */
+    margin-top: -50px;
+    height: 40px;
+    padding:5px 0px;
+    clear: both;
+    /*background: #286af0;*/
+    text-align: left;
+    color: #000;
+}
