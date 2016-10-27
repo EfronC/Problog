@@ -17,7 +17,7 @@ window.onload = function() {
 		var out = "";
 		var i;
 		for(i=0;i<arr.length;i++){
-			out += '<article class="nota"><a href="#" class="titulo-nota"><h3>' + arr[i].Titulo + '</h3></a><br>';
+			out += '<article class="nota"><a href="'+ arr[i].url +'" class="titulo-nota"><h3>' + arr[i].Titulo + '</h3></a><br>';
 			out += '<div class="fecha-nota">' + arr[i].Fecha + '</div><br>';
 			var nota = arr[i].Nota.substring(0,100);
 			out += '<div class="contenido-nota">' + nota + '...</div></article><br><br>';

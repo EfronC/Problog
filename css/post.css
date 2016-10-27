@@ -84,16 +84,45 @@ header #navbar li.dropdown {
 /*	Contenido	*/
 
 #banner {
+	position: relative;
 	margin-bottom: 10px;
-	max-height: 300px;
+	max-height: 400px;
+	overflow-y: hidden; 
+	border-bottom: solid;
+}
+
+#banner img {
+	max-width: 100%;
+	max-height: 100%;
 }
 
 #contenido {
 	max-width: 100%;
-	/*max-width:1600px;*/
 	margin: 0 auto;
 	padding: 10px;
 	max-height: auto;
+}
+
+#nota {
+	width: 79%;
+	/*outline: black solid;*/
+	min-height: 600px;
+	text-align: center;
+	color: white;
+	float: left;
+	background-color: #666;
+	box-shadow: 10px 10px 5px #000;
+}
+
+#bio {
+	width: 20%;
+	/*outline: black solid;*/
+	min-height: 600px;
+	text-align: center;
+	color: white;
+	float: right;
+	background-color: #666;
+	box-shadow: 10px 10px 5px #000;
 }
 
 
@@ -102,8 +131,8 @@ footer {
 	position: relative;
     /* Altura total del footer en px con valor negativo */
     margin-top: -50px;
-    height: 40px;
-    padding:5px 0px;
+    height: 10px;
+    padding:15px 0px;
     clear: both;
     /*background: #286af0;*/
     text-align: left;
