@@ -118,14 +118,27 @@ header #navbar li.dropdown {
 	width: 20%;
 	/*outline: black solid;*/
 	min-height: 600px;
-	text-align: center;
 	color: white;
 	float: right;
 	background-color: #666;
 	box-shadow: 10px 10px 5px #000;
 }
 
+#bio .foto {
+	float: left;
+	margin-right: 10px;
 
+}
+
+#contenido #bio #Efrain {
+	max-width: 100%;
+	margin: 10px 10px;
+}
+
+#contenido #bio #Mario {
+	max-width: 100%;
+	margin: 10px 10px;
+}
 
 footer {
 	position: relative;

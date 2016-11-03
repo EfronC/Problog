@@ -1,5 +1,6 @@
 function drop(o) {
 	up();
+	alert(o);
 	var x = o.split('-')[1];
 	switch(x) {
 		case '1':
