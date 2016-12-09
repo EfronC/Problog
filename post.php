@@ -94,7 +94,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
 				</div> <!-- /Iniciar Sesion-->
 			</li>
 			<li id="cerradoDeSesion" style="display:<?=$visibilidad?>;">
-				<a href="cerrarSesion.php" onclick="sesionCerrada()">Cerrar Sesion</a>
+				<a href="cerrarsesion.php" onclick="sesionCerrada()">Cerrar Sesion</a>
 			</li>
 					
 		</ul>
