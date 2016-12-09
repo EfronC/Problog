@@ -5,7 +5,7 @@ $host_db = "localhost";
 $user_db = "root";
 $pass_db = "root";
 $db_name = "bdWeb";
-$tbl_name = "Usuarios";
+$tbl_name = "usuarios";
 
 $conexion = mysqli_connect($host_db, $user_db, $pass_db, $db_name);
 
@@ -34,8 +34,8 @@ $conexion = mysqli_connect($host_db, $user_db, $pass_db, $db_name);
 
     $usuario=$_SESSION['username'];
     // Guardo en la BBDD 
-    $sql = "UPDATE Usuarios set nombre_imagen='$direccion' WHERE nombre_usuario='$usuario'";
-    if ((mysqli_query($conexion,$sql) or die(mysqli_error())) === TRUE) {
+    $sql = "UPDATE $tbl_name set nombre_imagen='$direccion' WHERE nombre_usuario='$usuario'";
+    if ((mysqli_query($conexion,$sql) or die(mysqli_error($conexion))) === TRUE) {
         echo "<script lenguaje=\'JavaScript\'>window.location='post.php'; alert('Imagen Subida Con Exito!'); </script>";  
     }else{
         echo "Error al subir la imagen." . $sql . "<br />" . mysqli_error($conexion); 

@@ -5,7 +5,7 @@ $host_db = "localhost";
 $user_db = "root";
 $pass_db = "root";
 $db_name = "bdWeb";
-$tbl_name = "Usuarios";
+$tbl_name = "usuarios";
 
 $conexion = mysqli_connect($host_db, $user_db, $pass_db, $db_name);
 
@@ -17,6 +17,7 @@ $username = $_POST['username'];
 $password = $_POST['password'];
  
 $sql = "SELECT * FROM $tbl_name WHERE nombre_usuario = '$username'";
+
 
  $result = mysqli_query($conexion,$sql) or die(mysqli_error());
 

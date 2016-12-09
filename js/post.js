@@ -59,5 +59,5 @@ window.onclick = function(e) {
 
 function sesionCerrada(){
 	alert("Sesion Cerrada");
-				
+	window.location='post.php'			
 }

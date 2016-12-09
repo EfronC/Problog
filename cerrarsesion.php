@@ -1,10 +1,9 @@
 <?php
 
 session_start();
-unset ($SESSION['username']);
+unset ($_SESSION['username']);
 session_destroy();
 
-header('Location: http://127.0.0.1/Problog/post.php');
-
+echo "<script lenguaje=\'JavaScript\'>window.location='post.php';</script>"; 
 
 ?>
