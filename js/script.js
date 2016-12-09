@@ -16,10 +16,3 @@
 		open('registroDeUsuarios.html','','top=100,left=300,width=350,height=480') ; 
 } 
 
-	function RegresarPagina()
-    {
-
-    	self.close();
-		window.close()
-		window.opener.document.location.reload()
-    }

@@ -41,8 +41,7 @@
 		 	 echo "<link rel='stylesheet' type='text/css' href='css/post.css'>";
 			 echo "<br />" . "<h2>" . "Usuario Creado Exitosamente!" . "</h2>";
 			 echo "<h4>" . "Bienvenido: " . $_POST['username'] . "</h4>" . "\n\n";
-			 echo "<h5>" . "<br><br><button type='submit' id='regresarPost' name='RegresarPost' onclick='RegresarPagina()'>Cerrar Ventana</button>". "</h5>";
-		 }
+			 }
 		
 		 else {
 		 	echo "Error al crear el usuario." . $query . "<br />" . mysqli_error($conexion); 
