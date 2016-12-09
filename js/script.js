@@ -1,8 +1,6 @@
 /**
  * @author Mario
  */
-//window.onload = function() {
-
 	function check(input) {
 			if	(input.value !== document.getElementById('email').value) {
 					input.setCustomValidity('Los dos correos deben coincidir.');
@@ -25,19 +23,3 @@
 		window.close()
 		window.opener.document.location.reload()
     }
-	
-	function cambiarVisibilidad() {
-       var div1 = document.getElementById('usuariosRegistrados');
-       var div2 = document.getElementById('imagenPerfil');
-       if(div1.style.display == 'block'){
-           div1.style.display = 'none';
-           div2.style.display = 'block';
-       }else{
-          div1.style.display = 'block';
-          div2.style.display = 'none';
-         }
-   }
-   
-
-
-//};

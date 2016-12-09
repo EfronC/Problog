@@ -15,7 +15,7 @@ function drop(o) {
 			document.getElementById("iniciarSesion").classList.toggle("show");
 			break;
 		case '5':
-			document.getElementById("cerrarSesion").classList.toggle("show");
+			document.getElementById("subirImagen").classList.toggle("show");
 			break;
 		default:
 			alert(o);
@@ -45,6 +45,17 @@ window.onclick = function(e) {
     }
   }
 }
+
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtna')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    for (var d = 0; d < dropdowns.length; d++) {
+      var openDropdown = dropdowns[d];
+    }
+  }
+}
+
 
 function sesionCerrada(){
 	alert("Sesion Cerrada");

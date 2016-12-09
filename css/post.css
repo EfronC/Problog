@@ -36,10 +36,50 @@ header #navbar ul {
 
 header #navbar ul li#inicioDeSesion{
 	float: right;
+	color:white;
 }
 
 header #navbar ul li#cerradoDeSesion{
 	float: right;
+}
+
+header #navbar ul li#inicioDeSesion img{
+	margin: -4px 10px 0 5px;
+	color: #333;
+	
+}
+
+header #navbar ul #inicioDeSesion #iniciarSesion #InicioSesion{
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 16px 16px;
+	text-decoration: none;
+
+}
+
+header #navbar ul li#inicioDeSesion #iniciarSesion.dropdown-content.show {
+	position: absolute;
+	background-color: #333;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	overflow: hidden;
+	margin-left: -90px;
+}
+
+header #navbar ul li#inicioDeSesion #subirImagen.dropdown-content.show {
+	position: absolute;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	overflow: hidden;
+	margin-left: 0px;
+}
+
+header #navbar ul #inicioDeSesion #subirImagen{
+	display: block;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	background-color: #333;
+
 }
 
 header #navbar li {
@@ -168,9 +208,9 @@ header #navbar li.dropdown {
 }
 
 #bio ul{
-	max-width: 100%
+	max-width: 100%;
 	max-height: 100%;
-	overflow: auto;
+	overflow: inherit;
 }
 
 #contenido #bio #Efrain {

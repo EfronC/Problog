@@ -92,10 +92,6 @@ header #navbar li.dropdown {
 	background-color: #293d3d;
 }
 
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
 .show {display: block;}
 
 /*	Contenido	*/

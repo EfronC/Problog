@@ -3,9 +3,11 @@ session_start();
 
 if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
   $visibilidad='block'; 
+  $sesion='none';
   $usuario=$_SESSION['username'];
  } else {  
   $visibilidad='none';
+  $sesion='block';
 }
 
 ?>
@@ -48,8 +50,25 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
 				</div>
 
 			</li>
-			<li class="dropdown" id="inicioDeSesion">
-				<a href="javascript:void(0)" id="dropdown-4" class="dropbtn" onClick="drop(this.id)">Iniciar Sesion</a>
+			<li class="dropdown" style="display:<?=$visibilidad?>;" id="inicioDeSesion">
+				<a href="javascript:void(0)" id="dropdown-5" class="dropbtna" onClick="drop(this.id)">
+					Perfil: <strong> <?=$_SESSION['username'];?> </strong>
+					<img src='images/<?=$usuario?>.jpg' border='3' height='30' width='30' onerror="this.src='images/default.jpg';"/>
+				</a>
+				<div class="dropdown-content" id="subirImagen">
+					<h5>Subir Imagen</h5>
+		 			<form action="subir.php" method="POST" enctype="multipart/form-data" name="subir" id="subir"> 
+						<input type="file" name="imagen" id="imagen" style="box-shadow:none;box-radius:none; border:0; margin:0; padding:0; width: 130px;" required/>
+						<br>
+						<br>
+						<input type="submit" name="subir" value="Subir"/>
+		  			</form>
+		  			<br>
+				</div> <!-- /Subir Imagen-->
+				
+			</li>
+			<li class="dropdown" id="inicioDeSesion" style="display:<?=$sesion?>;">
+				<a href="javascript:void(0)" id="dropdown-4" class="dropbtna" onClick="drop(this.id)">Iniciar Sesion</a>
 				<div class="dropdown-content" id="iniciarSesion">
 					<div id="InicioSesion">
 					<form action="checklogin.php" method="post" >
@@ -74,7 +93,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
 					</div> <!-- /Usuarios Registrados-->
 				</div> <!-- /Iniciar Sesion-->
 			</li>
-			<li id="cerradoDeSesion">
+			<li id="cerradoDeSesion" style="display:<?=$visibilidad?>;">
 				<a href="cerrarSesion.php" onclick="sesionCerrada()">Cerrar Sesion</a>
 			</li>
 					
@@ -90,23 +109,6 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
 
 	<div id="contenido">
 		<div id="nota">
-		<div id="imagenPerfil" style="display:<?=$visibilidad?>;">
-			<br>
-			<h2> Bienvenido <?=$_SESSION['username'];?></h2>
-		
-		  <h3>Imagen de Usuario</h3>
-		  <br>
-		  <img src='images/<?=$usuario?>.jpg' border='3' height='500' width='600' onerror="this.src='images/default.jpg';"/>
-		  <br>
-		  <h3>Subir Imagen</h3>
-		  <br>
-		  <form action="subir.php" method="POST" enctype="multipart/form-data" name="subir" id="subir"> 
-			<label for="imagen">Imagen:</label>
-			<input type="file" name="imagen" id="imagen" style="box-shadow:none;box-radius:none; border:0; margin:0; padding:0;" required/>
-			<input type="submit" name="subir" value="Subir"/>
-		  </form>
-		  <br>
-		</div> <!-- /Imagen Perfil-->
 		</div>
 		<div id="bio">
 			<div id="Efrain">
