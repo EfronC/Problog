@@ -84,7 +84,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
 					</form>
 					<br>
 					<br>
-					<p>¿No eres usuario?</p>
+					<p>Â¿No eres usuario?</p>
 					<div id="registro">
 						<button type="submit" id="registro" name="registro" onclick="abrirRegistro()">Registrarse</button>
 					</div> <!-- /Registro-->
@@ -94,7 +94,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
 				</div> <!-- /Iniciar Sesion-->
 			</li>
 			<li id="cerradoDeSesion" style="display:<?=$visibilidad?>;">
-				<a href="cerrarsesion.php" onclick="sesionCerrada()">Cerrar Sesion</a>
+				<a href="cerrarsesion.php" onclick="sesionCerrada()";>Cerrar Sesion</a>
 			</li>
 					
 		</ul>
@@ -109,7 +109,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
 
 	<div id="contenido">
 		<div id="nota">
-		<article>
+        <article>
 			<section>
 			<h1 id="titulo">Desvelados nuevos detalles de Injustice 2</h1>
 			<h5 id="fecha">09/10/2016</h5></section><br>
@@ -120,7 +120,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
 		<div id="bio">
 			<div id="Efrain">
 				<div class="foto"><img src="media/efrain.jpg"> </div>
-				<b>Efraín</b>
+				<b>EfraÃ­n</b>
 					<ul>
 						<li>
 							Programador
@@ -166,5 +166,6 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
 	</div>	
 
 	<footer>&copy Efraín Cárdenas, Mario López. All rigths reserved. Todas las marcas comerciales ™ son de sus respectivos dueños.</footer>
+
 </body>
 </html>

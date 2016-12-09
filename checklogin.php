@@ -9,17 +9,16 @@ $tbl_name = "usuarios";
 
 $conexion = mysqli_connect($host_db, $user_db, $pass_db, $db_name);
 
-	if (!$conexion) {
-	 	die("La conexion falló: " . mysqli_error());
-	}
+  if (!$conexion) {
+    die("La conexion falló: " . mysqli_error($conexion));
+  }
 
 $username = $_POST['username'];
 $password = $_POST['password'];
  
 $sql = "SELECT * FROM $tbl_name WHERE nombre_usuario = '$username'";
 
-
- $result = mysqli_query($conexion,$sql) or die(mysqli_error());
+ $result = mysqli_query($conexion, $sql) or die(mysqli_error($conexion));
 
 
 if (mysqli_num_rows($result) > 0) {     

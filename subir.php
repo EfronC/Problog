@@ -10,11 +10,11 @@ $tbl_name = "usuarios";
 $conexion = mysqli_connect($host_db, $user_db, $pass_db, $db_name);
 
     if (!$conexion) {
-        die("La conexion falló: " . mysqli_error());
+        die("La conexion falló: " . mysqli_error($conexion));
     }
   
     // Ruta donde se guardarán las imágenes 
-    $directorio = $_SERVER['DOCUMENT_ROOT'].'/Problog/images/'; 
+    $directorio = $_SERVER['DOCUMENT_ROOT'].'/images/'; 
    
     //Cambio nombre a la imagen con el nombre del usuario (el cual es unico)
     $nombre=$_SESSION['username'];
@@ -41,6 +41,6 @@ $conexion = mysqli_connect($host_db, $user_db, $pass_db, $db_name);
         echo "Error al subir la imagen." . $sql . "<br />" . mysqli_error($conexion); 
     }
 }
-
+    mysqli_close($conexion); 
        
-?>
+?>      

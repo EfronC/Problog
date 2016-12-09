@@ -13,13 +13,12 @@
  $conexion = mysqli_connect($host_db, $user_db, $pass_db, $db_name);
 
 	 if (!$conexion) {
-	 	die("La conexion falló: " . mysqli_error());
+	 	die("La conexion falló: " . mysqli_error($conexion));
 	 }
 
  $buscarUsuario = "SELECT * FROM $tbl_name
  WHERE nombre_usuario = '$_POST[username]' ";
 
- 
  $result = mysqli_query($conexion,$buscarUsuario) or die(mysqli_error($conexion));
 
  $count = mysqli_num_rows($result);
@@ -41,7 +40,7 @@
 		 	 echo "<link rel='stylesheet' type='text/css' href='css/post.css'>";
 			 echo "<br />" . "<h2>" . "Usuario Creado Exitosamente!" . "</h2>";
 			 echo "<h4>" . "Bienvenido: " . $_POST['username'] . "</h4>" . "\n\n";
-			 }
+			  }
 		
 		 else {
 		 	echo "Error al crear el usuario." . $query . "<br />" . mysqli_error($conexion); 
@@ -50,3 +49,5 @@
 		 }
 	 
  mysqli_close($conexion);
+
+ ?>
