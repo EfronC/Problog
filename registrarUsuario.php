@@ -13,13 +13,13 @@
  $conexion = mysqli_connect($host_db, $user_db, $pass_db, $db_name);
 
 	 if (!$conexion) {
-	 	die("La conexion falló: " . mysqli_connect_error());
+	 	die("La conexion falló: " . mysqli_error());
 	 }
 
  $buscarUsuario = "SELECT * FROM $tbl_name
  WHERE nombre_usuario = '$_POST[username]' ";
 
- $result = mysqli_query($conexion,$buscarUsuario);
+ $result = mysqli_query($conexion,$buscarUsuario) or die(mysqli_error());
 
  $count = mysqli_num_rows($result);
 
@@ -35,9 +35,9 @@
 		 $query = "INSERT INTO Usuarios (nombre_usuario, password, email, nombre_imagen)
 		           VALUES ('$_POST[username]', '$_POST[password]', '$_POST[email]', 'default.jpg')";
 		
-		 if (mysqli_query($conexion,$query) === TRUE) {
+		 if ((mysqli_query($conexion,$query) or die(mysqli_error())) === TRUE) {
 		 
-		 	 echo "<link rel='stylesheet' type='text/css' href='css/post.css'>"
+		 	 echo "<link rel='stylesheet' type='text/css' href='css/post.css'>";
 			 echo "<br />" . "<h2>" . "Usuario Creado Exitosamente!" . "</h2>";
 			 echo "<h4>" . "Bienvenido: " . $_POST['username'] . "</h4>" . "\n\n";
 			 echo "<h5>" . "<br><br><button type='submit' id='regresarPost' name='RegresarPost' onclick='RegresarPagina()'>Cerrar Ventana</button>". "</h5>";

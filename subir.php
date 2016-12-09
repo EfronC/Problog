@@ -10,7 +10,7 @@ $tbl_name = "Usuarios";
 $conexion = mysqli_connect($host_db, $user_db, $pass_db, $db_name);
 
     if (!$conexion) {
-        die("La conexion falló: " . mysqli_connect_error());
+        die("La conexion falló: " . mysqli_error());
     }
   
     // Ruta donde se guardarán las imágenes 
@@ -35,7 +35,7 @@ $conexion = mysqli_connect($host_db, $user_db, $pass_db, $db_name);
     $usuario=$_SESSION['username'];
     // Guardo en la BBDD 
     $sql = "UPDATE Usuarios set nombre_imagen='$direccion' WHERE nombre_usuario='$usuario'";
-    if (mysqli_query($conexion,$sql) === TRUE) {
+    if ((mysqli_query($conexion,$sql) or die(mysqli_error())) === TRUE) {
         echo "<script lenguaje=\'JavaScript\'>window.location='post.php'; alert('Imagen Subida Con Exito!'); </script>";  
     }else{
         echo "Error al subir la imagen." . $sql . "<br />" . mysqli_error($conexion); 
