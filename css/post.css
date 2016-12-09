@@ -155,14 +155,15 @@ header #navbar li.dropdown {
 }
 
 #nota {
-	width: 79%;
+	width: 70%;
 	/*outline: black solid;*/
 	min-height: 600px;
-	text-align: center;
+	text-align: left;
 	color: white;
 	float: left;
 	background-color: #666;
 	box-shadow: 10px 10px 5px #000;
+	padding: 5px;
 }
 
 /*
@@ -224,6 +225,19 @@ header #navbar li.dropdown {
 
 #contenido #bio p {
 	text-align: justify;
+}
+
+#titulo {
+	margin-bottom: 0;
+}
+
+#fecha {
+	margin-top: 5px;
+}
+
+#referencias {
+	font-style: italic;
+
 }
 
 footer {

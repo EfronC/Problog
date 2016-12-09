@@ -109,6 +109,13 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
 
 	<div id="contenido">
 		<div id="nota">
+		<article>
+			<section>
+			<h1 id="titulo">Desvelados nuevos detalles de Injustice 2</h1>
+			<h5 id="fecha">09/10/2016</h5></section><br>
+			<section id="cont">No han habido muchas oportunidades concedidas por NetherRealm Studios sobre su próximo título basado en la licencia DC Cómics, Injustice 2. El juego de lucha que acaparó gran atención el pasado E3 se ha mantenido escondido la mayor parte del tiempo, salvo por algún gameplay que daba cuenta de algún nuevo héroe. Desde el estudio, Brian Goodman ha concedido una serie de pequeñas informaciones de gran relevancia, en una entrevista a Game Reactor.</section><br><br>
+			<h4 id="referencias">Referencias: http://www.somosxbox.com/desvelados-nuevos-detalles-injustice-2/90190</h4>
+		</article>
 		</div>
 		<div id="bio">
 			<div id="Efrain">
@@ -158,6 +165,6 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
 		</div>
 	</div>	
 
-	<footer>&copy Efraín Cárdenas, Mario López. All rigths reserved.</footer>
+	<footer>&copy Efraín Cárdenas, Mario López. All rigths reserved. Todas las marcas comerciales ™ son de sus respectivos dueños.</footer>
 </body>
 </html>
