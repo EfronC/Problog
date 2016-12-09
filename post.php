@@ -3,11 +3,9 @@ session_start();
 
 if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
   $visibilidad='block'; 
-  $login='none';
   $usuario=$_SESSION['username'];
  } else {  
   $visibilidad='none';
-  $login='block';
 }
 
 ?>
@@ -50,66 +48,65 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
 				</div>
 
 			</li>
+			<li class="dropdown" id="inicioDeSesion">
+				<a href="javascript:void(0)" id="dropdown-4" class="dropbtn" onClick="drop(this.id)">Iniciar Sesion</a>
+				<div class="dropdown-content" id="iniciarSesion">
+					<div id="InicioSesion">
+					<form action="checklogin.php" method="post" >
+						<label>Nombre de Usuario:</label><br>
+						<input name="username" type="text" id="username" required>
+						<br><br>
+				 
+						<label>Password:</label><br>
+						<input name="password" type="password" id="password" required>
+						<br><br>
+				 
+						<input type="submit" name="Entrar" value="Ingresar">
+					</form>
+					<br>
+					<br>
+					<p>¿No eres usuario?</p>
+					<div id="registro">
+						<button type="submit" id="registro" name="registro" onclick="abrirRegistro()">Registrarse</button>
+					</div> <!-- /Registro-->
+					<br>
+
+					</div> <!-- /Usuarios Registrados-->
+				</div> <!-- /Iniciar Sesion-->
+			</li>
+			<li id="cerradoDeSesion">
+				<a href="cerrarSesion.php" onclick="sesionCerrada()">Cerrar Sesion</a>
+			</li>
+					
 		</ul>
 
 		<div id="audio">
 				<audio autoplay="autoplay" loop="loop" width="300" height="32" ><source src="media/Injustice_Song.mp3" type="audio/mp3"></source></audio> 
-		</div>
-	</div>
+		</div> <!-- /Audio-->
+	</div> <!-- /NavBar-->
 </header>
 
 	<div id="banner"><center><img src="media/bannerblog.jpg"/></center></div>
 
 	<div id="contenido">
 		<div id="nota">
-
-	<div id="usuariosRegistrados" style="display:<?=$login?>;">
-			<h1>Login de Usuarios</h1>
-			<form action="checklogin.php" method="post" >
-				<label>Nombre de Usuario:</label><br>
-				<input name="username" type="text" id="username" required>
-				<br><br>
-				 
-				<label>Password:</label><br>
-				<input name="password" type="password" id="password" required>
-				<br><br>
-				 
-				<input type="submit" name="Entrar" value="Ingresar">
-			
-				 
-			</form>
-			<br>
-			<br>
-		<p>¿No eres usuario?</p>
-		<div id="registro">
-			<button type="submit" id="registro" name="registro" onclick="abrirRegistro()">Registrarse</button>
-		</div>
-
-	</div> <!-- /Usuarios Registrados-->
 		<div id="imagenPerfil" style="display:<?=$visibilidad?>;">
-			<div id="cerrarSesion">
-				<form action="cerrarSesion.php" method="post" >
-					<input type="submit" name="CerrarSesion" value="Cerrar Sesion">
-				</form>
-			</div>
 			<br>
 			<h2> Bienvenido <?=$_SESSION['username'];?></h2>
-		<ul>
-		  <h3><li>Imagen de Usuario</li></h3>
+		
+		  <h3>Imagen de Usuario</h3>
 		  <br>
 		  <img src='images/<?=$usuario?>.jpg' border='3' height='500' width='600' onerror="this.src='images/default.jpg';"/>
 		  <br>
-		  <h3><li>Subir Imagen</li></h3>
+		  <h3>Subir Imagen</h3>
 		  <br>
 		  <form action="subir.php" method="POST" enctype="multipart/form-data" name="subir" id="subir"> 
 			<label for="imagen">Imagen:</label>
 			<input type="file" name="imagen" id="imagen" style="box-shadow:none;box-radius:none; border:0; margin:0; padding:0;" required/>
 			<input type="submit" name="subir" value="Subir"/>
 		  </form>
+		  <br>
 		</div> <!-- /Imagen Perfil-->
-
-		  
-		</ul>
 		</div>
 		<div id="bio">
 			<div id="Efrain">

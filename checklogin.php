@@ -24,7 +24,6 @@ $sql = "SELECT * FROM $tbl_name WHERE nombre_usuario = '$username'";
 if (mysqli_num_rows($result) > 0) {     
  
 $row = mysqli_fetch_assoc($result);
- //if (password_verify($password, $row['password'])) { 
   if($password===$row['password']){
 
     $_SESSION['loggedin'] = true;
@@ -36,6 +35,9 @@ $row = mysqli_fetch_assoc($result);
  } else { 
    echo "<script lenguaje=\'JavaScript\'>window.location='post.php'; alert('Username o Password estan incorrectos.'); </script>";  
  }
+}else{
+    echo "<script lenguaje=\'JavaScript\'>window.location='post.php'; alert('Username o Password estan incorrectos.'); </script>";  
+ 
 }
  mysqli_close($conexion); 
  ?>

@@ -11,6 +11,12 @@ function drop(o) {
 		case '3':
 			document.getElementById("dconhumor").classList.toggle("show");
 			break;
+		case '4':
+			document.getElementById("iniciarSesion").classList.toggle("show");
+			break;
+		case '5':
+			document.getElementById("cerrarSesion").classList.toggle("show");
+			break;
 		default:
 			alert(o);
 	}
@@ -38,4 +44,9 @@ window.onclick = function(e) {
       }
     }
   }
+}
+
+function sesionCerrada(){
+	alert("Sesion Cerrada");
+				
 }

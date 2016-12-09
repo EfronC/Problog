@@ -34,6 +34,14 @@ header #navbar ul {
 	height: 50px;
 }
 
+header #navbar ul li#inicioDeSesion{
+	float: right;
+}
+
+header #navbar ul li#cerradoDeSesion{
+	float: right;
+}
+
 header #navbar li {
 	float: left;
 }
@@ -118,6 +126,7 @@ header #navbar li.dropdown {
 	box-shadow: 10px 10px 5px #000;
 }
 
+/*
 #nota #imagenPerfil #cerrarSesion{
 	float: right;
 	margin: 7px 10px 0px 0px;
@@ -127,6 +136,12 @@ header #navbar li.dropdown {
 #nota #login,#nota #registro {
 	float: center;
 	margin-top: 4px;
+}
+*/
+
+#nota #imagenPerfil img{
+	max-width: 95%;
+	max-height: 95%;
 }
 
 #bio {
@@ -138,16 +153,24 @@ header #navbar li.dropdown {
 	background-color: #666;
 	box-shadow: 10px 10px 5px #000;
 	font-size: 17px;
+	overflow: auto;
 }
 
 #bio .foto {
 	float: left;
 	margin-right: 30px;
-
+	overflow: hidden;
 }
 
 #bio img {
 	outline: black solid;
+
+}
+
+#bio ul{
+	max-width: 100%
+	max-height: 100%;
+	overflow: auto;
 }
 
 #contenido #bio #Efrain {
